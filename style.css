@@ -1,31 +1,105 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7; 
-    color: #333; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f0f4;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #5c4b88, #7d529d);
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
 }
 
 .content {
-    padding: 50px 0;
     text-align: center;
+    padding: 50px;
+    background-color: #f7f3f7;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#about-me {
-    background-color: #ffd3b6; 
+.content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #7d529d;
 }
 
-#services-offered {
-    background-color: #c9e4e7;
-    color: #333;
+.content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#testimonials {
-    background-color: #e9c3e6; 
-    color: #333;
+.content ul {
+    list-style: none;
+    margin-bottom: 30px;
 }
 
-#contact-me {
-    background-color: #c7e4ed; 
-    color: #333;
+.content ul li {
+    margin: 15px 0;
+}
+
+.testimonial {
+    margin-bottom: 40px;
+    border-left: 4px solid #7d529d;
+    padding-left: 15px;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial cite {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to bottom, #5c4b88, #7d529d);
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 30px;
+    }
 }
