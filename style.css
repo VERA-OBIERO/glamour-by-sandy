@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; 
+    color: #333; 
+}
+
+.content {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about-me {
+    background-color: #ffd3b6; 
+}
+
+#services-offered {
+    background-color: #c9e4e7;
+    color: #333;
+}
+
+#testimonials {
+    background-color: #e9c3e6; 
+    color: #333;
+}
+
+#contact-me {
+    background-color: #c7e4ed; 
+    color: #333;
+}
